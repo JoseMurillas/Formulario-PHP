@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Registro.css">
+    </head>
+    <body>
+        <div class="formato">
+            <form action="../Controlador/Logica.php" method="post">
+                <h1>REGISTRO</h1>
+                <p>Ingresa Nombre:</p>
+                <input type="text" name="nombre" id="campos">
+                <br>
+                <p>Ingresa Fecha de Nacimiento:</p>
+                <input type="date" name="nacimiento" id="campos">
+                <br>
+                <p>Ingresa Identificacion</p>
+                <input type="number" name="identificacion" id="campos">
+                <br>
+                <p>Ingrese Telefono</p>
+                <input type="number" name="telefono" id="campos">
+                <br>
+                <p>Ingresa Correo</p>
+                <input type="text" name="correo" id="campos">
+                <br>
+                <p>Ingresa Grupo/Area/Cargo</p>
+                <input type="text" name="cargo" id="campos">
+                <br>
+                <p>Ingresa tu rol</p>
+                <select name="rol" id="rol" id="campos">
+                    <option value="none" selected disable hidden>Seleccione Rol</option>
+                    <option value="1">Aprendiz</option>
+                    <option value="2">Funcionario</option>
+                    <option value="3">Instructor</option>
+                </select>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>
